@@ -1,4 +1,4 @@
-# 🔐 Spring Boot Security Practice
+# 🔐 Library Management System
 
 A comprehensive Spring Boot application demonstrating secure user authentication, authorization, and password management using Spring Security and JWT principles.
 
