@@ -366,11 +366,13 @@ Contributions are welcome! Please follow these steps:
 
 ## 📧 Contact
 
-**Saptarshi** - [Your Email] - [Your LinkedIn]
+**Saptarshi Biswas**  
+📩 Email: Saptarshibiswas6@gmail.com  
+🔗 LinkedIn: https://www.linkedin.com/in/saptarshi-biswas-43500727b/  
 
-Project Link: [[https://github.com/yourusername/spring-security-practice](https://github.com/yourusername/spring-security-practice)](https://github.com/Saptarshi088/LibraryManagementSystem.git)
+📁 Project Repository:  
+https://github.com/Saptarshi088/LibraryManagementSystem
 
----
 
 <div align="center">
 
