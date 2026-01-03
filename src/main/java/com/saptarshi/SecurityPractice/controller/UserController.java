@@ -1,5 +1,7 @@
 package com.saptarshi.SecurityPractice.controller;
 
+import com.saptarshi.SecurityPractice.dto.UserDto;
+import com.saptarshi.SecurityPractice.mapper.UserMapper;
 import com.saptarshi.SecurityPractice.model.User;
 import com.saptarshi.SecurityPractice.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,14 +23,22 @@ public class UserController {
     @Autowired
     PasswordEncoder encoder;
 
+    @Autowired
+    UserMapper userMapper;
+
     @GetMapping("/api")
     public String home(){
         return "Hello World!";
     }
 
     @GetMapping("/users")
-    public ResponseEntity<List<User>> getALlUsers(){
-        return ResponseEntity.ok(service.getAllUsers());
+    public ResponseEntity<List<UserDto>> getALlUsers(){
+
+        return ResponseEntity.ok(service.getAllUsers()
+                .stream()
+                .map(userMapper::toDto)
+                .toList()
+        );
     }
 
     @PostMapping("/register")
